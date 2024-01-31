@@ -1,0 +1,47 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #081207;
+}
+
+ul {
+    padding: 2.5%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    background: #5f7e64;
+    /* background: linear-gradient(to right, rgba(255,0,0,0), #5f7e64); */
+    text-decoration: none !important;
+    list-style: none;
+    margin: auto;
+}
+
+/* #attribution {
+    color: #c1cda2;
+
+    /* display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed; 
+} */
+
+
+li a {
+    color: #081207;
+    text-decoration: none !important;
+}
+
+a {
+    color: #081207;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #c1cda2;
+    }
+
+body {
+    background-color: black;
+    background: white url("images/soybeans.jpg") no-repeat;
+}

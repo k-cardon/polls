@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!--Required meta tags-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+  </head>
+  <body class="container">
+    <br>
+    <br>
+    <div class="row">
+        
+        {% if latest_question_list %}
+            <ul>
+            {% for question in latest_question_list %}
+                <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+            {% endfor %}
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <li>Photo credit: <a href="https://www.flickr.com/photos/unitedsoybean/10060046804/in/photolist-gjYnqQ-EC1faN-Hw6tcy-JJvyod-9hEvWW-bnxcYb-9tbMa2-FnvALw-aFbJ59-KZLR31-rpXQ7b-By5ydt-JhyRRH-rnR1xH-KEopKm-Tax3z1-ppwuTp-AxC621-d9aQv5-a5vEZv-q2Stfv-qxrbPZ-oWDafj-g9DrGy-P6Ra99-pfyXWj-9qoMEG-PgiKT1-dVV3M7-ugD66u-9yww5m-8ZsMWB-fg8ng6-cFb9Am-fcB7yp-qeiapN-semChL-EeeRdx-QPn2QR-qhSVnS-gjZ4pr-jx3MCT-9k8Q8w-o6ERDa-afQ9p-595DB4-fj9kxt-bMwouX-csghUE-aidiF6"
+                    >United Soybean Board</a></li>
+            </ul>
+        {% else %}
+            <p>No polls are available.</p>
+        {% endif %}
+
+    <!-- <div class="row">
+        <div class="col-12">
+            <p id="attribution">Photo credit: United Soybean Board
+                <a href="https://www.flickr.com/photos/unitedsoybean/10060046804/in/photolist-gjYnqQ-EC1faN-Hw6tcy-JJvyod-9hEvWW-bnxcYb-9tbMa2-FnvALw-aFbJ59-KZLR31-rpXQ7b-By5ydt-JhyRRH-rnR1xH-KEopKm-Tax3z1-ppwuTp-AxC621-d9aQv5-a5vEZv-q2Stfv-qxrbPZ-oWDafj-g9DrGy-P6Ra99-pfyXWj-9qoMEG-PgiKT1-dVV3M7-ugD66u-9yww5m-8ZsMWB-fg8ng6-cFb9Am-fcB7yp-qeiapN-semChL-EeeRdx-QPn2QR-qhSVnS-gjZ4pr-jx3MCT-9k8Q8w-o6ERDa-afQ9p-595DB4-fj9kxt-bMwouX-csghUE-aidiF6"
+                >United Soybean Board</a>
+            </p>
+        </div>
+    </div> -->
+        
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
+<!--
+
+        <div class="col-md-4">
+
+        </div>
+    </div>
+  </body>
+{% load static %}
+<img src="{% static 'my_app/example.jpg' %}" alt="My image">
+
+
+    
+-->
